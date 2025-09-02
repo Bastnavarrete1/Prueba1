@@ -9,13 +9,13 @@
 </head>
 <body>
 
-    <!-- Encabezado -->
+    <!-- Encabezado basico, quiero hacerlo mas bonito a futuro -->
     <header>
         <h1>CloudWorld ☁︎</h1>
         <p>Tienda especialista en liquidos de vaper frutales</p>
     </header>
 
-    <!-- Menu -->
+    <!-- Menu de las pestañas futuras en las que trabajare -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#newbarnav" aria-controls="newbarnav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
         </div>
     </nav>
 
-    <!-- Productos -->
+    <!-- Listados de productos que venderé -->
     <section id="productos" class="mt-5">
     <h2>Liquidos disponibles</h2>
 
@@ -74,12 +74,54 @@
     </div>
     </section>
 
+    <section id="contacto" class="mt-5">
+    <h2>Contacto</h2>
+    <form id="contactForm" novalidate>
+        <!-- Nombre -->
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
+            <div class="error-message text-danger mt-1" style="display:none;"></div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="tuemail@ejemplo.com">
+            <div class="error-message text-danger mt-1" style="display:none;"></div>
+        </div>
+
+        <!-- Teléfono -->
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="text" id="telefono" class="form-control" placeholder="Ej: 912345678">
+            <div class="error-message text-danger mt-1" style="display:none;"></div>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terminos">
+            <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+            <div class="error-message text-danger mt-1" style="display:none;"></div>
+        </div>
+
+        <!-- Botón Submit -->
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+
 
 
     <!-- Pie para protegerme si me roban la pagina jaja-->
     <footer>
         <p>© CloudWorld 2025 - Todos los derechos reservados</p>
     </footer>
+
+    <!-- Enlaces JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jss/script.js"></script>
+
 
 </body>
 </html>
