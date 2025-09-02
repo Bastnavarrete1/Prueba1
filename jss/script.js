@@ -32,7 +32,6 @@ $(document).ready(function () {
             isValid = false;
         }
 
-
         // Validar Checkbox
         if (!$("#terminos").is(":checked")) {
             $("#terminos").addClass("is-invalid");
@@ -46,14 +45,8 @@ $(document).ready(function () {
             $("#contactForm")[0].reset();
         }
     });
-
-    // Quitar errores al escribir en los inputs
-    $(".form-control").on("input", function(){
-        $(this).removeClass("is-invalid");
-        $(this).next(".error-message").hide();
-    });
-
-    // Quitar error al marcar el checkbox
+    
+    // Quitar error al marcar el checkbox - papito dios es grande porque me funciono
     $("#terminos").change(function(){
         $(this).removeClass("is-invalid");
         $(this).closest(".form-check").find(".error-message").hide();
